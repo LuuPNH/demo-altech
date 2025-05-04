@@ -1,0 +1,19 @@
+{
+  "dart.flutterSdkPath": ".fvm/versions/",
+  "search.exclude": {
+    "**/.fvm": true
+  },
+  "files.watcherExclude": {
+    "**/.fvm": true
+  },
+  "[dart]": {
+    "editor.wordWrapColumn": 100,
+    "editor.rulers": [
+      100
+    ], // Helps visualize line length
+    "editor.wordWrap": "off" // Ensure wrapping doesn’t interfere
+  },
+  "java.compile.nullAnalysis.mode": "disabled",
+  "dart.lineLength": 100,
+  "dart.renameFilesWithClasses": "prompt"
+}

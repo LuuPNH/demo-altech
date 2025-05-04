@@ -1,0 +1,1 @@
+export 'word_pair_dto.dart';
