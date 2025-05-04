@@ -20,12 +20,16 @@ typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
 class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'en';
 
+  static String m0(score, total) => "Score: ${score} / ${total}";
+
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-        "listFavorite":
-            MessageLookupByLibrary.simpleMessage("List of favorite products"),
+        "go": MessageLookupByLibrary.simpleMessage("Go"),
+        "goAgain": MessageLookupByLibrary.simpleMessage("Go again"),
+        "grade": MessageLookupByLibrary.simpleMessage("Grade"),
         "noDataFoundHere":
             MessageLookupByLibrary.simpleMessage("Opps, no data found here!"),
-        "searchProduct": MessageLookupByLibrary.simpleMessage("Search product")
+        "score": m0,
+        "wordPair": MessageLookupByLibrary.simpleMessage("Word Pair")
       };
 }

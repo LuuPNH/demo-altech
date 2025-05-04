@@ -1,6 +1,16 @@
 {
   "@@locale": "en",
   "noDataFoundHere": "Opps, no data found here!",
-  "searchProduct": "Search product",
-  "listFavorite": "List of favorite products"
+  "go": "Go",
+  "goAgain": "Go again",
+  "grade": "Grade",
+  "wordPair": "Word Pair",
+  "score": "Score: {score} / {total}",
+  "@score": {
+    "description": "Score display format",
+    "placeholders": {
+      "score": {},
+      "total": {}
+    }
+  }
 }

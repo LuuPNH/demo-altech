@@ -60,23 +60,53 @@ class S {
     );
   }
 
-  /// `Search product`
-  String get searchProduct {
+  /// `Go`
+  String get go {
     return Intl.message(
-      'Search product',
-      name: 'searchProduct',
+      'Go',
+      name: 'go',
       desc: '',
       args: [],
     );
   }
 
-  /// `List of favorite products`
-  String get listFavorite {
+  /// `Go again`
+  String get goAgain {
     return Intl.message(
-      'List of favorite products',
-      name: 'listFavorite',
+      'Go again',
+      name: 'goAgain',
       desc: '',
       args: [],
+    );
+  }
+
+  /// `Grade`
+  String get grade {
+    return Intl.message(
+      'Grade',
+      name: 'grade',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Word Pair`
+  String get wordPair {
+    return Intl.message(
+      'Word Pair',
+      name: 'wordPair',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Score: {score} / {total}`
+  String score(Object score, Object total) {
+    return Intl.message(
+      'Score: $score / $total',
+      name: 'score',
+      desc: 'Score display format',
+      args: [score, total],
     );
   }
 }

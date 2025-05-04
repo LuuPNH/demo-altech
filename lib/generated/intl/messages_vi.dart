@@ -20,12 +20,16 @@ typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
 class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'vi';
 
+  static String m0(score, total) => "Điểm: ${score} / ${total}";
+
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-        "listFavorite":
-            MessageLookupByLibrary.simpleMessage("Danh sách sản phẩm đã thích"),
+        "go": MessageLookupByLibrary.simpleMessage("Đi"),
+        "goAgain": MessageLookupByLibrary.simpleMessage("Đi lại"),
+        "grade": MessageLookupByLibrary.simpleMessage("Điểm"),
         "noDataFoundHere": MessageLookupByLibrary.simpleMessage(
             "Opps, không có dữ liệu ở đây!"),
-        "searchProduct": MessageLookupByLibrary.simpleMessage("Tìm sản phẩm")
+        "score": m0,
+        "wordPair": MessageLookupByLibrary.simpleMessage("Cặp từ")
       };
 }

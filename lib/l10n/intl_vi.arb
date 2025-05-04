@@ -1,6 +1,9 @@
 {
   "@@locale": "vi",
   "noDataFoundHere": "Opps, không có dữ liệu ở đây!",
-  "searchProduct": "Tìm sản phẩm",
-  "listFavorite": "Danh sách sản phẩm đã thích"
+  "go": "Đi",
+  "goAgain": "Đi lại",
+  "grade": "Điểm",
+  "wordPair": "Cặp từ",
+  "score": "Điểm: {score} / {total}"
 }

@@ -1,8 +1,17 @@
 part of 'word_pair_bloc.dart';
 
 @immutable
-class WordPairEvent extends BaseEvent {
-  final WordPairEvent wordPair;
+class WordMatched extends BaseEvent {
+  final WordPair wordPair;
 
-  WordPairEvent(this.wordPair);
+  WordMatched(this.wordPair);
 }
+
+@immutable
+class ChangeGameStatus extends BaseEvent {
+  final GameStatus currentStatus;
+
+  ChangeGameStatus(this.currentStatus);
+}
+@immutable
+class GameGraded extends BaseEvent {}
